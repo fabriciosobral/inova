@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="./dist/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/owl.theme.default.min.css">
+
+    <title>Brick</title>
+</head>
+
+<body>
+    <section class="mb-0">
+        <div class="banner banner-int">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 top-header">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row w-100 justify-content-between">
+                            <div class="contacts-top d-flex flex-row pt-3 pt-sm-0 w-100">
+                                <div class="group">
+                                    <div class="bt-contact telephone">
+                                        <h1><span>Anuncie Conosco</span></h1>
+                                    </div>
+                                </div>
+                                <div class="contacts-slider contacts-top-slider  owl-carousel owl-theme">
+                                    <div class="item">
+                                        <span>Loja Alto</span> 11 5525 22 22
+                                    </div>
+
+                                    <div class="item">
+                                        <span>Loja Alto</span> 11 5525 22 22
+                                    </div>
+                                    <div class="item">
+                                        <span>Loja Alto</span> 11 5525 22 22
+                                    </div>
+                                    <div class="item">
+                                        <span>Loja Alto</span> 11 5525 22 22
+                                    </div>
+                                </div>
+                                <div class="diamond">
+                                    <a href="#"><span></span> Oportunidades</a>
+                                </div>
+                                <div class="selo-top">
+                                    <h1>#viva<span>Teresópolis</span></h1>
+                                </div>
+                                <div class="link-top">
+                                    <img src="./images/brickselect.png" class="img-fluid logo-select" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-nav">
+                            <button id="menu-nav"><i class="fa fa-bars"></i>Menu</button>
+                        </div>
+                    </div>
+                    <div class="col-12" id="menu-content">
+                        <div class="menu-itens">
+                            <ul>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="return">
+        <div class="container">
+            <div class="row">
+                Home - Nome da página selecionada
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="sidebar-form" class="col-lg-3">
+
+                    <div class="sidebar-form">
+                        <div>
+                            <h1 class="titulo-section text-center py-4"><span>Refine sua Busca</span><br>Encontre seu imóvel!</h1>
+                        </div>
+                        <button class="text-center btn-sidebar-form" data-toggle="collapse" data-target="#contentSearch" id="btn-sidebar-form" rel="open"><i class="fa fa-chevron-down"></i>
+                        Exibir Busca</button>
+                        <div class="container collapse" id="contentSearch">
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Perfil</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                    <form id="form-comprar" class="form-sidebar">
+                                        <div class="form-group">
+                                            <label for="build_status">Localização</label>
+                                            <input type="text" placeholder="Digite um Bairro ou Cidade" id="myInput" onfocusout="newElement()">
+                                            <ul id="myUL" class="list-ul-place">
+                                                <li class="itens-place"></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="diferenciais">Tipo do imóvel</label>
+                                            <select class="form-control no-radius-right font-12p font-w600" name="diferenciais" id="diferenciais">
+                                        <option value="todos">Ver Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        <option value="todos">Todos</option>
+                                        </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mr-1">
+                                                    <label for="valor-min">Valor mín</label>
+                                                    <input type="number" class="form-control w-90" id="valor-min" placeholder="R$0,00">
+                                                </div>
+                                                <div class="form-group col-md-6 ml-1">
+                                                    <label for="valor-max">Valor máx</label>
+                                                    <input type="number" class="form-control w-90" id="valor-max" placeholder="R$0,00">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group slider-switch">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-10">
+                                                    <p>Estuda permuta</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>Quantidade de quartos</label>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search change-search">
+                                                        <input id="beds1" name="beds[]" value="1" type="checkbox">
+                                                        <label for="beds1" class="btn btn-select-filters">1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search change-search">
+                                                        <input id="beds2" name="beds[]" value="2" type="checkbox">
+                                                        <label for="beds2" class="btn btn-select-filters ">2</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="beds3" name="beds[]" value="3" type="checkbox">
+                                                        <label for="beds3" class="btn btn-select-filters">3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="beds4" name="beds[]" value="4" type="checkbox">
+                                                        <label for="beds4" class="btn btn-select-filters">4</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="beds5" name="beds[]" value="5" type="checkbox">
+                                                        <label for="beds5" class="btn btn-select-filters">5+</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mr-1">
+                                                    <label for="valor-min">Valor mín</label>
+                                                    <input type="number" class="form-control w-90" id="valor-min" placeholder="R$0,00">
+                                                </div>
+                                                <div class="form-group col-md-6 ml-1">
+                                                    <label for="valor-max">Valor máx</label>
+                                                    <input type="number" class="form-control w-90" id="valor-max" placeholder="R$0,00">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Suítes</label>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="suited1" name="suited[]" value="1" type="checkbox">
+                                                        <label for="suited1" class="btn btn-select-filters">1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="suited2" name="suited[]" value="2" type="checkbox">
+                                                        <label for="suited2" class="btn btn-select-filters ">2</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited3" name="suited[]" value="3" type="checkbox">
+                                                        <label for="suited3" class="btn btn-select-filters">3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited4" name="suited[]" value="4" type="checkbox">
+                                                        <label for="suited4" class="btn btn-select-filters">4</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited5" name="suited[]" value="5" type="checkbox">
+                                                        <label for="suited5" class="btn btn-select-filters">5+</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Banheiros</label>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="suited1" name="suited[]" value="1" type="checkbox">
+                                                        <label for="suited1" class="btn btn-select-filters">1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="suited2" name="suited[]" value="2" type="checkbox">
+                                                        <label for="suited2" class="btn btn-select-filters ">2</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited3" name="suited[]" value="3" type="checkbox">
+                                                        <label for="suited3" class="btn btn-select-filters">3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited4" name="suited[]" value="4" type="checkbox">
+                                                        <label for="suited4" class="btn btn-select-filters">4</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="suited5" name="suited[]" value="5" type="checkbox">
+                                                        <label for="suited5" class="btn btn-select-filters">5+</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Vagas</label>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="vaga1" name="vagas[]" value="1" type="checkbox">
+                                                        <label for="vaga1" class="btn btn-select-filters">1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2">
+                                                    <div class="radio-search change-search">
+                                                        <input id="vaga2" name="vagas[]" value="2" type="checkbox">
+                                                        <label for="vaga2" class="btn btn-select-filters ">2</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="vaga3" name="vagas[]" value="3" type="checkbox">
+                                                        <label for="vaga3" class="btn btn-select-filters">3</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="vaga4" name="vagas[]" value="4" type="checkbox">
+                                                        <label for="vaga4" class="btn btn-select-filters">4</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-2 change-search">
+                                                    <div class="radio-search">
+                                                        <input id="vaga5" name="vagas[]" value="5" type="checkbox">
+                                                        <label for="vaga5" class="btn btn-select-filters">5+</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-row p-2 d-flex flex-row">
+
+                                            <div class="input-search">
+                                                <input type="text" name="locate" value="" class="form-control search-banner" placeholder="Buscar por código">
+                                                </span>
+                                            </div>
+                                            <div class="box-search">
+                                                <button class="btn-icon-search">
+                                            </div>
+                                        </div>
+                                        <div class="form-row p-2 ">
+                                            <button class="enviar">Aplicar filtro</button>
+                                            </div>
+                                    </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="qtd">
+                            <div>
+                                <h1><span>3.418</span> Imóveis encontrados</h1>
+                            </div>
+                            <div>
+                                <p>ordenar por</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 mb-4 mb-lg-0">
+                                <div class="box-transparent-listagem gallery-detail gallery-three">
+                                    <div class="pic details-img-slider owl-carousel owl-theme">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                    </div>
+                                    <h1>
+                                        Apartamento de 2 dormitórios no Centro da cidade
+                                    </h1>
+                                    <div class="locate "><i class="icon "></i> Teresópolis, RJ</div>
+                                    <hr>
+                                    <div class="info ">
+                                        <div class="details ">
+                                            <div class="icons ">
+                                                <span class="area ">98m²</span>
+                                                <span class="room ">3</span>
+                                                <span class="suite ">3</span>
+                                                <span class="parking ">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="d-flex flex-column flex-sm-row justify-content-between ">
+                                        <div class="price ">
+                                            <h1>R$9.278<span>/mês</span></h1>
+                                        </div>
+                                        <div class="rent ">
+                                            <h1>IPTU R$999 <span>condomínio R$999</span></h1>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="pt-3 pr-4 pb-3 pl-4">Linda Casa semi-mobiliada: 2 dormitórios, sendo uma suíte, sala com sanca em gesso, lareira, espera para sótão, lavabo...</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-4 mb-lg-0 ">
+                                <div class="box-transparent-listagem gallery-detail gallery-three">
+                                    <div class="pic details-img-slider owl-carousel owl-theme">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                        <img src="./images/autoeste.png " alt=" ">
+                                    </div>
+                                    <h1>
+                                        Apartamento de 2 dormitórios no Centro da cidade
+                                    </h1>
+                                    <div class="locate "><i class="icon "></i> Teresópolis, RJ</div>
+                                    <hr>
+                                    <div class="info ">
+                                        <div class="details ">
+                                            <div class="icons ">
+                                                <span class="area ">98m²</span>
+                                                <span class="room ">3</span>
+                                                <span class="suite ">3</span>
+                                                <span class="parking ">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+                                    <div class="d-flex flex-column flex-sm-row justify-content-between ">
+                                        <div class="price ">
+                                            <h1>R$9.278<span>/mês</span></h1>
+                                        </div>
+                                        <div class="rent ">
+                                            <h1>IPTU R$999 <span>condomínio R$999</span></h1>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p class="pt-3 pr-4 pb-3 pl-4">Linda Casa semi-mobiliada: 2 dormitórios, sendo uma suíte, sala com sanca em gesso, lareira, espera para sótão, lavabo...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-3 text-center "> <img src="images/logo.png " class="img-fluid logo " />
+                </div>
+                <div class="col-sm-3 icons mb-4">
+                    <h1 class="address ">Nossos Contatos</h1>
+                    <h2>Matriz</h2>
+                    <p>
+                        <span></span> Praça Higino da Silveira, 214, loja 1 Bairro Alto - Teresópolis/RJ
+                    </p>
+                    <br>
+                    <h2>Filial</h2>
+                    <p>
+                        <span></span> Avenida Feliciano Sodré 680, Centro - Teresópolis/RJ
+                    </p>
+                </div>
+                <div class="col-sm-3 icons ">
+                    <h1 class="address ">Acesso rápido</h1>
+                    <p class="address mb-4 mb-sm-0 ">
+                        <a href="# ">Sobre a Brick</a>
+                        <a href="# ">Comprar</a>
+                        <a href="# ">Cadastre seu imóvel</a>
+                        <a href="# ">Favoritos</a>
+                        <a href="# ">Contato</a>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <h1>Nos ligue ou chame no WathsApp</h1>
+                    <p class="tel mb-4 mb-sm-0 ">
+                        <span></span> 21 2741.5187 <span></span> 21 2742.5884
+                    </p>
+                    <button class="whatsapp"><span></span> 21 97419.5176</button>
+                    <a href="#" class="email">brickimobiliaria@gmail.com</a>
+                    <button class="bt-contact-2"><span></span> 2ª via do Boleto</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-small-text col-12">
+
+                    <hr />
+                    <p class="text-center">Siga a gente</p>
+                    <div class="social ">
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fab fa-blogger"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class="f-copy ">
+            <div class="copyright ">
+                <div class="container ">
+                    <div class="row d-sm-flex flex-sm-row ">
+                        <div class="copyright-txt ">Copyright 2020 © Imobiliária Brick - Todos os direitos reservados.</div>
+                        <div class="d-flex flex-row mt-4 mt-sm-0 justify-content-center logos ">
+                            <div class="ml-2 ">Desenvolvido por <img src="./images/logo-web2lead.png " alt=" "> </div>
+                            <div class="ml-2 ">e integrado com <img src="./images/logo-vista.png " alt=" "> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+
+<script src="./js/scripts.js "></script>
+
+</html>
