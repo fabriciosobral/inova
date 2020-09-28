@@ -8,7 +8,8 @@
 ///// - commom layout ///////////////////////////////////////////////////////////////
 /////
 body {
-    background: #fff
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -30,6 +31,26 @@ header {
     display       : flex;
     flex-direction: row;
 }
+
+.contagem{
+    background-color: #464646;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    h1{
+        color: #FCB92D;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+h4{
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
 .black-select{
     background-color: #1D1D1B;
     margin-top: -35px;
@@ -121,7 +142,7 @@ header {
 }
 
 .banner {
-    background-image   : url("../../images/bg-banner.png");
+    background-image   : url("../../images/bg-home-inova.png");
     color              : @textDark;
     background-color   : #212121;
     background-position: center;
@@ -130,15 +151,32 @@ header {
 
     .nav-tabs {
         border: none;
+        padding: 0;
+        margin-bottom: -7px;
+        padding-left: 7px;
+        .nav-item{
+            padding: 0;
+            .nav-link {
+                border: none;
+                color : @secondColor;
+                background-color: @grey-color-01;
+                padding: 10px 25px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
 
-        .nav-link {
-            border: none;
-            color : #fff;
-
-            &.active {
-                background-color: transparent;
-                color           : #fff;
-                border-bottom   : solid 2px @firstColor;
+                &.active {
+                    background-color: @firstColor;
+                    color           : #fff;
+                    padding: 10px 25px;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+                @media(min-width: 768px){
+                    padding: 10px 50px;
+                    &.active {
+                        padding: 10px 50px;
+                    }
+                }
             }
         }
     }
@@ -300,6 +338,15 @@ header {
 
 }
 
+.float-rigth{
+        position: relative;
+        right: -180px;
+        top: 12px;
+    input{
+        background-color: @secondColor;
+    }
+}
+
 .form-calculation {
     display        : flex;
     align-items    : center;
@@ -328,6 +375,7 @@ header {
 }
 
 .contact-page{
+display: flex;
     .address {
         a {
             display: block;
@@ -345,21 +393,20 @@ header {
         }
 
     }
-    h2 {
-        font-size     : 15px;
-        font-weight   : 700;
-        color         : #000;
-        text-align    : center;
-        letter-spacing: -1px;
-        margin-bottom : 0;
+    // h2 {
+    //     font-weight   : 700;
+    //     color         : #000;
+    //     text-align    : center;
+    //     letter-spacing: -1px;
+    //     margin-bottom : 0;
 
-        @media(min-width:768px) {
-            text-align: left;
-        }
+    //     @media(min-width:768px) {
+    //         text-align: left;
+    //     }
 
-        letter-spacing: -1px;
-        min-height    : 25px;
-    }
+    //     letter-spacing: -1px;
+    //     min-height    : 25px;
+    // }
 
     button.whatsapp {
         color           : #fff;
@@ -426,8 +473,34 @@ header {
 
 
 footer{
+    box-shadow: 0px 3px 6px #00000029;
     * {
         font-family: 'Open Sans', sans-serif;
+    }
+
+    .social{
+        justify-content: flex-end;
+        p{
+            margin-right: 15px;
+            padding-top: 4px;
+        }
+        .fa{
+            font-size: 19px;
+            margin-right: 5px;
+            margin-top: 5px;
+
+            &.fa-youtube-play{
+                color:#FF0000;
+            }
+
+            &.fa-facebook{
+                color: #006CE6;
+            }
+
+            &.fa-instagram{
+                color:#FF6B16;
+            }
+        }
     }
 
     .f-copy {
@@ -435,12 +508,11 @@ footer{
         background-color: #212121;
     }
 
-    background-color: #2D2D2D;
+    background-color: @grey-color-02;
     padding-top     : 45px;
     text-align      : center;
 
     .logo {
-        width           : 168px;
         margin-bottom   : 20px;
         background-color: #fff;
         padding         : 20px;
@@ -467,7 +539,7 @@ footer{
                     font-size  : 12px !important;
                     content    : '\f05b';
                     font-family: 'fontawesome';
-                    color      : @color-white;
+                    color      : @secondColor;
                 }
             }
         }
@@ -479,7 +551,7 @@ footer{
                 font-size  : 10px;
                 content    : '\f095';
                 font-family: 'fontawesome';
-                color      : @color-white;
+                color      : @secondColor;
             }
         }
     }
@@ -496,20 +568,20 @@ footer{
             font-size   : 16px;
             content     : '\f0e0';
             font-family : 'fontawesome';
-            color       : @color-white;
+            color      : @secondColor;
             margin-right: 10px;
         }
     }
 
     a {
-        color        : @color-white;
+        color        : @secondColor;
         margin-bottom: 10px;
 
         &:hover,
         &:active,
         &:visited,
         &:focus {
-            color: @color-white;
+            color: @secondColor;
         }
     }
 
@@ -538,7 +610,7 @@ footer{
     h1 {
         font-size     : 20px;
         font-weight   : bolder;
-        color         : @color-white;
+        color         : @secondColor;
         text-align    : center;
         text-transform: uppercase;
 
@@ -549,14 +621,14 @@ footer{
     }
 
     p {
-        font-size : 16px;
+        font-size : 14px;
         text-align: center;
 
         @media(min-width:768px) {
             text-align: left;
         }
 
-        color : @color-white;
+        color : @secondColor;
     }
 
     .mt-custom {
@@ -575,7 +647,7 @@ footer{
                 font-size        : 16px;
                 content          : '\f095';
                 font-family      : 'fontawesome';
-                color            : @color-white;
+                color            : @secondColor;
                 -moz-transform   : scaleX(-1);
                 -o-transform     : scaleX(-1);
                 -webkit-transform: scaleX(-1);
@@ -590,7 +662,7 @@ footer{
                 font-size        : 16px;
                 content          : '\f041';
                 font-family      : 'fontawesome';
-                color            : @color-white;
+                color            : @secondColor;
                 -moz-transform   : scaleX(-1);
                 -o-transform     : scaleX(-1);
                 -webkit-transform: scaleX(-1);
@@ -624,7 +696,7 @@ footer{
                     font-size  : 12px !important;
                     content    : '\f095';
                     font-family: 'fontawesome';
-                    color      : @color-white;
+                    color      : @secondColor;
                 }
             }
         }
@@ -867,7 +939,7 @@ footer{
         .form-control1 {
             width        : 105px;
             height       : 60px;
-            border-radius: 6px 0px 0px 6px;
+            border-radius: 1px 0px 0px 4px;
             opacity      : 1;
             padding-top  : 20px;
             padding-left : 7px;
@@ -899,7 +971,7 @@ footer{
             opacity         : 1;
             background-color: @firstColor;
             color           : #FFF;
-            border-radius   : 0 6px 6px 0;
+            border-radius   : 0 4px 4px 0;
             font-weight     : 700;
             font-size       : 14px;
             margin-bottom   : 2px;
@@ -955,7 +1027,7 @@ footer{
         .form-control1 {
             width        : 140px;
             height       : 60px;
-            border-radius: 6px 0px 0px 6px;
+            border-radius: 1px 0px 0px 4px;
             opacity      : 1;
         }
 
@@ -1028,7 +1100,7 @@ footer{
         .form-control1 {
             width        : 200px;
             height       : 60px;
-            border-radius: 6px 0px 0px 6px;
+            border-radius: 1px 0px 0px 4px;
             opacity      : 1;
         }
 

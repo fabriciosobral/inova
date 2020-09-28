@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./dist/css/style.css">
-    <link rel="stylesheet" href="./src/less/components-clear.css">
     <link rel="stylesheet" href="./dist/owl.carousel.min.css">
     <link rel="stylesheet" href="./dist/owl.theme.default.min.css">
     <title>Inova</title>
@@ -27,83 +26,57 @@
 
 
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-4 pt-4">
-                    <div class="warning-bt">
-                        <h1><span>Anuncie Conosco</span></h1>
-                    </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <div class="contacts-slider contacts-top-slider  owl-carousel owl-theme">
-                        <div class="item">
-                            <span>Loja Alto</span> 11 5525 22 22
+    
+    
+    <section class="mb-0">
+        <div class="banner banner-int">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 top-header">
+                        <div class="logo">
+                            <img src="./images/logo-inova.png" alt="">
                         </div>
-
-                        <div class="item">
-                            <span>Loja Alto</span> 11 5525 22 22
-                        </div>
-                        <div class="item">
-                            <span>Loja Alto</span> 11 5525 22 22
-                        </div>
-                        <div class="item">
-                            <span>Loja Alto</span> 11 5525 22 22
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <div class="diamond">
-                        <a href="#"><span></span> Oportunidades</a>
-                    </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <div class="selo-top">
-                        <h1>#viva<span>Teresópolis</span></h1>
-                    </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <div class="box-white">
-                        <h1 class="title-background-color"> Tire suas dúvidas! <span>(48) 3304.3033</span></h1>
-                        <h1 class="solicite">Solicite mais informações</h1>
-                        <form action="" method="post" accept-charset="utf-8" class="p-3 pb-1">
-                            <div class="form-row">
-                                <div class="form-group input-group">
-                                    <span id="error_nomeid" class="error"></span>
-                                    <span class="has-float-label">
-                                        <input type="nome" name="nomeid" value="" class="form-control" id="nomeid" placeholder="Digite aqui!!" required="required">
-                                        <label for="nomeid">Nome </label>
-                                    </span>
-                                </div>
-                                <div class="form-group input-group">
-                                    <span id="error_emailid" class="error"></span>
-                                    <span class="has-float-label">
-                                        <input type="email" name="emailid" value="" class="form-control" id="emailid" placeholder="Digite aqui!!" required="required">
-                                        <label for="emailid">Email </label>
-                                    </span>
-                                </div>
-                                <div class="form-group input-group">
-                                    <span id="error_telefoneid" class="error"></span>
-                                    <span class="has-float-label">
-                                        <input type="telefone" name="telefoneid" value="" class="form-control" id="telefoneid" placeholder="Digite aqui!!" required="required">
-                                        <label for="telefoneid">Telefone </label>
-                                    </span>
-                                </div>
-
-                                <div class="form-group mr-1">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <textarea name="comments" class="form-control" id="comments" placeholder="Mensagem" required="required" style="font-size: 12px;"></textarea>
+                        <div class="d-flex flex-column flex-sm-row w-100 justify-content-end">
+                        <div class="linkicon obj1"><span></span>Ofertas</div>
+                        <div class="linkicon obj2"><span></span>Seja um parceiro</div>
+                            <div class="contacts-top">
+                                <div class="group">
+                                    <div class="bt-contact telephone">
+                                        <h1><span>Anuncie Conosco</span></h1>
                                     </div>
                                 </div>
-                                <input type="submit" name="btn_contactus" value="Tenho Initeresse" class="btn allbt" id="btn_contactus" title="Submit">
+                                <div class="social d-none d-sm-flex">
+                                    <p>Siga a gente</p>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+
+                        <div class="menu-nav">
+                            <button id="menu-nav"><i class="fa fa-bars"></i>Menu</button>
+                        </div>
+                    </div>
+                    <div class="col-12" id="menu-content">
+                        <div class="menu-itens">
+                            <ul>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                                <li>contato</li>
+                                <li>sobrenos</li>
+                                <li>contato</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="return">
         <div class="container">
             <div class="row">
@@ -111,34 +84,41 @@
             </div>
         </div>
     </section>
-    <section class="contact-page">
+    <section>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-4 icons">
-                    <h1 class="address ">Nossos Contatos</h1>
-                    <h2>Matriz</h2>
-                    <p>
-                        <span></span> Praça Higino da Silveira, 214, loja 1 Bairro Alto - Teresópolis/RJ
-                    </p>
-                    <br>
-                    <h2>Filial</h2>
-                    <p>
-                        <span></span> Avenida Feliciano Sodré 680, Centro - Teresópolis/RJ
-                    </p>
-                    <h1 class="mt-4">Nos ligue ou chame no WathsApp</h1>
-                    <p class="tel mb-4 mb-sm-0 ">
-                        <span></span> 21 2741.5187 <span></span> 21 2742.5884
-                    </p>
-                    <button class="whatsapp"><span></span> 21 97419.5176</button>
-                    <a href="#" class="email">brickimobiliaria@gmail.com</a>
-                </div>
-                <div class="col-sm-5">
-                    <img src="./images/contact-img.png" class="img-fluid" alt="" style="border-bottom: 4px solid #902328;">
+            <div class="row mb-4 mb-sm-0">
+                <div class="col-sm-9">
+                    <h2 class="titulo-bold-black" style="font-size: 40px; font-weight: 600;">
+                        Conheça os benefícios que a<span style="font-size: 40px; font-weight: 600; display: block;"> Rede Inova tem para sua Imobiliária!</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget duis at tellus at urna condimentum mattis pellentesque. Tortor aliquam nulla facilisi cras fermentum odio eu. Auctor elit sed vulputate mi sit amet. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Quis auctor elit sed vulputate mi sit amet mauris commodo. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. </p>
+                    <p>Est sit amet facilisis magna etiam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Egestas egestas fringilla phasellus faucibus.</p>
+                    <hr>
+                    <div class="contact-page mb-5">
+                        <div class="feature assinatura">
+                            <span></span>
+                        </div>
+                        <h2>Um dos portais de <span>maior visibilidade no Brasil</span></h2>
+                    </div>
+                    <div class="contact-page mb-5">
+                        <div class="feature assinatura">
+                            <span></span>
+                        </div>
+                        <h2>Milhares de novos <span>clientes todos os dias</span></h2>
+                    </div>
+                    <div class="contact-page mb-5">
+                        <div class="feature assinatura">
+                            <span></span>
+                        </div>
+                        <h2>Clientes <span>altamente interessados em adquirir imóveis na sua região</span></h2>
+                    </div>
+                    <hr>
+                    <h2 class="subtitle-sejaparceiro">Preencha o formulário ou ligue <span>00 0000-0000</span></h2>
                 </div>
                 <div class="col-sm-3">
                     <div class="box-white">
-                        <h1 class="title-background-color"> Tire suas dúvidas! <span>(48) 3304.3033</span></h1>
-                        <h1 class="solicite">Solicite mais informações</h1>
+                        <h1 class="title-background-color"> <span style="font-size: 17px; text-align: center;">Aumente o número de leads para sua imobiliária</span></h1>
+                        <h1 class="solicite">Preencha suas informações</h1>
                         <form action="" method="post" accept-charset="utf-8" class="p-3 pb-1">
                             <div class="form-row">
                                 <div class="form-group input-group">
@@ -174,8 +154,8 @@
                                         <textarea name="comments" class="form-control" id="comments" placeholder="Mensagem" required="required" style="font-size: 12px;"></textarea>
                                     </div>
                                 </div>
-                                <input type="submit" name="btn_contactus" value="Tenho Initeresse" class="btn allbt" id="btn_contactus" title="Submit" class="mb-0">
                             </div>
+                            <input type="submit" name="btn_contactus" value="Enviar Contato" class="btn allbt" id="btn_contactus" title="Submit">
                         </form>
                     </div>
                 </div>

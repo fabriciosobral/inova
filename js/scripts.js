@@ -317,13 +317,19 @@
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 1,
                     nav: false,
+                    margin: 30
+                }, 
+                768: {
+                    items: 1,
+                    nav: false,
+                    margin: 30
                 },
                 1024: {
                     items: 3,
                     nav: true,
-                    margin: 20,
+                    margin: 30,
                     dots: false,
                     autoplay: false,
                     navText: ["<i class='fa fa-2x fa-chevron-left'></i>", "<i class='fa fa-2x fa-chevron-right'></i>"]
